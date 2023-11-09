@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style-min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab&display=swap" rel="stylesheet">
+  <script src="/script-min.js" defer></script>
+  <title>Weather</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header">
+      Weather View
+    </div>
+    <div class="search_city">
+      <input id="search_input" class="user_input" type="text" placeholder="Search Your City" style="color:black;">
+      <button id="search">Search</button>
+    </div>
+    <div class="city">
+      <p id="city_head">City: </p>
+      <p id="searched_city">NIL</p>
+      <img id="location_img" src="/location2.png" alt="" height="30px" width="30px">
+    </div>
+    <div class="status">
+      <p id="stats">Status:</p>
+      <p id="curr_stats">NIL</p>
+      <img id="status_img" src="/wind.png" alt="" height="40px" width="40px">
+    </div>
+    <div class="details">
+      <p id="more_details">-: <u>More Details</u> :-</p>
+    </div>
+    <div class="temperature">
+      <div class="temp_details" id="temp_c">
+        <p class="ele" id="c_data">Temp. in C : NIL</p>
+        <p class="ele" id="f_data">Temp. in F : NIL</p>
+        <p class="ele" id="humidity_data">Humidity (%) : NIL</p>
+        <p class="ele" id="wind_data">Wind Speed (Km/h) : NIL</p>
+      </div>
+      <div class="clear_all">
+        <button id="clear">Reset 🔁</button>
+      </div>
+      <footer class="credits">
+        <p id="credit">Developed By:- Rituraj❤️</p>
+      </footer>
+    </div>
+
+    <audio src="/sounds/correct-6033.mp3" style="display: none;" type="audio/mpeg" id="onResult">
+    </audio>
+
+    <audio src="/sounds/wrong-answer-129254.mp3" style="display: none;" type="audio/mpeg" id="onError">
+    </audio>
+
+    <audio src="/sounds/reset.mp3" style="display: none;" type="audio/mpeg" id="onClear">
+    </audio>
+</body>
+
+</html>
